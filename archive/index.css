@@ -1,0 +1,32 @@
+body {
+    background-image: url(pretty.png);
+    font-family: sans-serif;
+}       
+.header {
+    background-color: rgb(255, 102, 153);
+    color: white;
+    padding: 5px 10px;
+}       
+.footer {
+    background-color: rgb(255, 102, 255);
+    padding: 6px;
+    clear: both;
+}        
+#hopper-pic {
+    width: 500px;
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 6px;          
+}      
+#hopper-bio {
+    
+}
+#hopper-links {
+    float: right;
+    width: 30%;
+    margin-left: 10px;
+}
+#links {
+	float: left;
+	margin-left: 10px;
+}

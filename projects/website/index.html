@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="text-center background">
+
+<!-- Navbar -->
+  <nav class="navbar nav-border navbar-expand sticky-top head-foot">
+
+	<ul class="navbar-nav navbar-center w-100">
+		<a href="../../" class="navbar-brand mr-0">
+			<img src="../../photos/iconsmall.png" style="max-width:40px;vertical-align:middle;" class="navbar-brand">
+		</a>
+		<a class="nav-link" href="../../">Hackerlife.tech</a>
+	</ul>
+
+  </nav>
+
+  <div class="container-fluid content" align="center">
+
+    <img src="../../photos/icon.png" class="img-fluid d-none d-lg-inline" style="max-height:420px;padding-bottom:20px;padding-top:20px">
+    <img src="../../photos/pi.png" class="d-none d-xl-inline" style="height:420px;padding-left:20px;padding-bottom:20px;padding-top:20px">
+
+    <h1>Website</h1>
+    <p>Believe it or not, this website was coded from scratch, by me, and is hosted on a raspberry pi in my living room. I utilized bootstrap to make my website look acceptable on any size display. I wanted to learn about networking, so I bought a domain name and started off on my long, long journey to get to this point.</p>
+
+    <h3>Journey</h3>
+    <div class="subheading">Idea</div>
+      <p>I had this novel idea that I wanted a website. I also thought it would be cool to have it hosted on my mineral oil cooled computer, which you can learn more about <a href="../mineral_oil_pc">here</a>. Long story short, I set up a LAMP server to handle the hosting and bought a domain at <a href=https://www.namecheap.com/">Namecheap</a>. It all worked relatively well, other than some overheating problems I had with the computer. That said, the website I put up was far from perfect, and more an inside joke with my friends. If you want to see it, go <a href="../../archive">here</a>, but do yourself a favor and don't click the link. About a year later, I saw that having my own website could be a great way to market my skills to employers. I took that opportunity to revamp my website and make it something that I could be proud of.</p>
+    <div class="subheading">Hardware</div>
+      <p>Bringing my website to a new level took more than just software. Although adequate for occasional use, the now 10 year old Dell tower was not in the greatest of shape. So I went with the next best thing, a Raspberry Pi. I began by setting up Raspbian with NGINX. I used <a href="https://www.pestmeester.nl/index.html#1.0">this</a> very helpful guide for reference. I chose to use NGINX instead of APACHE because of its focus on doing the most with minimal hardware like the raspberry pi.</p>
+    <div class="subheading">Programming</div>
+      <p>Although hardware was needed for the project, the main aspect of revamping my site was on the software side. Namely where to begin. I started by looking at well designed websites. I found a few that I liked the look of. <a href="http://www.fionayeung.com/">This</a> and <a href="https://jihoonsuh.com/">this</a> were my favorites and the main ones I based my design off of. I also had heard of <a href="https://getbootstrap.com/">Bootstrap</a> from a friend and decided to give it a try as well. From a mixture of trial and error, as well as sample code, I was able to make my template. With the template, I began to add content like the page you are reading right now. Overall, the design process was a fun and frustrating experience that I had never had before.</p>
+    
+    <h3>Features</h3>
+    <div class="subheading">Navbar</div>
+      <img src="../../photos/navbar.png" class="img-fluid d-inline" width="650px" style="padding-bottom:20px">
+      <p>It just completes the look. I chose to put my logo on the bar, so wherever you go on the page, you can see it. At first I settled on a navbar that started lower on the page and stuck to the top as you scrolled past. I didn't like this design because it only looked good on my home page which had the nice header with my picture. I changed it to the static-top-bar so it could be consistent on every page, despite not having much functionality.</p>
+    <div class="subheading">Project Pages</div>
+      <img src="../../photos/projects.png" class="img-fluid d-inline" width="650px" style="padding-bottom:20px">
+      <p>For these, I didn't just want to have a list of centered pictures with links. I got the idea to do a tile design from one of the websites I linked to above.</p>
+    <div class="subheading">Footer</div>
+      <img src="../../photos/footer.png" class="img-fluid d-inline" width="650px" style="padding-bottom:20px">
+      <p>At first I contemplated putting my contact info on a section on the home page, but decided to put it in the footer so it would be on every page and easier to find. The copyright was a nice touch too.</p>
+    <div class="subheading">Theme</div>
+      <p>For the theme, I chose neutral colors mainly because they never look bad. Light and dark grey look much better than white and black, and have a little more class than a bunch of random colors. I chose to center everything in a small column because otherwise the page starts to feel crowded and unprofessional.</p>
+
+    <h3>Conclusion</h3>
+    <p>The final product is what you see here and now. Hackerlife.tech is a constantly changing and evolving thing as it was since I began the project. I hope to come back to this project multiple times in my life to test out the new skills I have gained. But this is where it stands: a portfolio for my greatest achievements in tech.</p>
+
+  </div>
+
+  <!--Footer-->
+  <footer class="page-footer footer-border font-small pt-4 mt-4 head-foot">
+
+      <!--Footer Links-->
+      <div id="social-media" class="container-fluid text-center" style="font-size:2em">
+
+        <a href="photos/snapcode.png"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/holdenbork"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.reddit.com/user/professor_bork"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+        <a href="https://github.com/HoldenA1"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/in/holden-adamec-7838b4153"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+      </div>
+
+      <div>
+        Phone: (1)669-300-2143<br>
+        Email: holden.adamec@gmail.com
+      </div>
+
+      <!--Copyright-->
+      <div class="footer-copyright py-3 text-center">
+          © 2018 Copyright:
+          <a href="../../copyright/"> Hackerlife.tech </a>
+      </div>
+
+  </footer>
+
+</body>
+
+</html>

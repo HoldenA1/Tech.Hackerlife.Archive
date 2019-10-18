@@ -1,0 +1,233 @@
+/* Colors - #4d4d4d: dark grey; #595959: less-dark grey; #668cff: blue; #f2f2f2: background; #a6a6a6: hr color; */
+
+p {
+  color: #4d4d4d;
+  font-size: 1.45em;
+  line-height: 40px;
+  padding-bottom: 20px;
+  max-width: 800px;
+  text-align: justify;
+}
+
+strong {
+  text-align: left;
+}
+
+hr {
+  background-color: #a6a6a6;
+  border-width: 2px;
+  max-width: 850px;
+}
+
+h1 {
+  color: black;
+}
+
+/* Icon Settings */
+i {
+  color:#595959;
+}
+
+.bullet-list > li {
+  color: #4d4d4d;
+  font-size: 1.45em;
+  line-height: 40px;
+  padding-bottom: 20px;
+  max-width: 800px;
+  text-align: left;
+}
+
+.subheading {
+  font-weight: bold;
+  color: #4d4d4d;
+  font-size: 1.45em;
+  line-height: 40px;
+  padding-bottom: 20px;
+  max-width: 800px;
+  text-align: left;
+}
+
+/* For the text that displays the date on posts */
+.date {
+  text-align: center;
+}
+
+#banner {
+  font-size: 50px;
+  font-weight: 100; 
+  min-height: 400px;
+  color: black;
+}
+
+#name {
+  font-size: 80px;
+  font-weight: 100; 
+  color: black;
+}
+
+/* Color of the main background of all body elements */
+.background {
+  background-color: #f2f2f2;
+}
+
+.about-pics {
+  max-height:400px;
+  padding-top:25px;
+  padding:20px;
+}
+
+/* The background color for the header and footer */
+.head-foot {
+  background-color: white;
+}
+
+.footer-border {
+  border-top: 1px solid #a6a6a6;
+}
+
+/* Navbar Settings */
+.navbar-nav.navbar-center {
+  font-size: 1.45em;
+  justify-content: center;
+  display: flex;
+  align-items:center;
+}
+
+.nav-border {
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.nav-link {
+  position: relative;
+  color: #a6a6a6;
+  text-decoration: none;
+}
+
+/* Smooth animation for navbar text */
+.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a6a6a6;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover {
+  color: #595959;
+}
+
+.nav-link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Gives content proper spacing */
+.content {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+/* 
+Handles the project list
+Add padding BETWEEN each column 
+ */
+.row,
+.row > .column-projects {
+    padding: 8px;
+}
+
+/* Create two equal columns that floats next to each other for the projects section */
+.column-projects {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-box {
+  max-width: none;
+  background-color: #4d4d4d;
+  padding: 0px;
+  position: relative;
+}
+
+.image {
+  width:100%;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-box:hover .image {
+  opacity: 0.3;
+}
+
+.project-box:hover  .middle {
+  opacity: 1;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 991px) {
+  .column-projects {
+    width: 100%;
+  }
+  .middle {
+    opacity: 1;
+  }
+  .image {
+    opacity: 0.3;
+  }
+  #banner {
+    font-size: 20px;
+    font-weight: 100; 
+    min-height: 400px;
+    color: black;
+  }
+
+  #name {
+    font-size: 45px;
+    font-weight: 100; 
+    color: black;
+  }
+  
+  p, .subheading, .bullet-list > li {
+	font-size: 1.1em;
+	line-height: 30px;
+  }
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+}
+
+.text-header {
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+}
